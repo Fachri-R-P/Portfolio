@@ -12,12 +12,12 @@ const Hero = () => {
     };
 
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-24 md:py-10">
+        <section className="relative h-screen flex items-center justify-center overflow-hidden">
             {/* Background Elements*/}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-linear-to-br from-green-400 to-blue-600 rounded-full opacity-1 blur-3xl animate-pulse delay-100"></div>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center p-10 space-x-0 md:space-x-10">
+            <div className="absolute flex flex-col md:flex-row items-center justify-center p-10 space-x-10">
                 {/* Gambar Profile */}
                 <div className="mb-4 md:mb-0 md:mr-8">
                     <img
@@ -58,7 +58,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="mt-10 md:mt-0 md:absolute md:bottom-10 md:left-1/2 md:-translate-x-1/2 flex justify-center animate-bounce">
+            <div className="absolute bottom-30 left-1/2 -translate-x-1/2 flex justify-center animate-bounce">
                 <button onClick={scrollToAbout} className="group flex flex-col items-center text-gray-600 hover:text-black transition-colors cursor-pointer">
                     <span className="text-sm mb-2">Learn More</span>
                     <ArrowDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform" />
